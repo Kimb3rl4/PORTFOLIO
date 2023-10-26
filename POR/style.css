@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    transition: .2s linear  ;
+
+}
+html{
+    font-size: 62.%;
+    overflow-x: hidden;
+    scroll-padding-top: 9rem;
+    scroll-behavior: smooth;
+
+}
+
+html::-webkit-scrollbar{
+    width: .8rem;
+}
+html::-webkit-scrollbar-track{
+background: transparent;    
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fff;
+    border-radius: 5rem;
+    
+}
+body{
+ 
+    background: black;
+}
+
+/*----HEADER CSS START--------*/
+.header {
+    background: #131313;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: #131313;
+    position: fixed;
+    top: 0;left:0; right: 0;
+    z-index: 999 ;
+}
+.header .LOGO img{
+    height: 6rem;
+ 
+}
+
+.header .nav a{
+    margin:  13rem;
+    font-size: 1.6rem;
+    color: #fff;
+    position: relative;
+    text-decoration: none;
+   
+}
+.header .nav a:after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: yellow;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+.header .nav a:hover::after{
+    width: 100%;
+}
+/*HEADER CSS END*/
+/*---------`HOME CSS START-------*/
+.home {
+    align-items: center;
+    display: flex;
+    background: url(/Images/BG.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    color: #fff;
+ 
+
+}
+.content h1 {
+max-width: 60 rem; 
+color: #fff;
+font-size: 100px;
+}
+.content h1 span{
+    color: yellow;
+}
+/*--------- HOME CSS END-------*/
+
+/*------SERVICES CSS START-----*/
+.SERVICES {
+    color: #fff;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    background: url(/Images/SERVICES.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.SERVICES h1{
+    position: relative;
+
+left: 230px;
+top: -13px;
+}
+.SERVICES h1 span{
+    color: yellow;
+}
+/*------SERVICES CSS END-----*/
+
+/*-----ABOUT CSS START--*/
+.ABOUT {
+    color: #fff;
+    height: 100vh;
+    align-items: center;
+    display: flex;
+    background: #131313;
+    background-size: cover;
+    background-position: center;
+    font-size: 20px;
+    font-style: italic;
+
+}
+.ABOUT h1 span{
+    color: yellow;
+}
+/*----------ABOUT CSS END----*/
+
+/*----CONTACT US START ----- */
+#CONTACT {
+    
+    color: #fff;
+}
